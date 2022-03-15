@@ -1,0 +1,22 @@
+.Navigation ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.Navigation ul a {
+  text-decoration: none;
+  color:#009dff;
+}
+
+.Navigation ul > li {
+  position: relative;
+}
+
+.Navigation ul > li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -7px;
+}
